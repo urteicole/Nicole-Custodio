@@ -11,11 +11,14 @@ body {
     padding: 30px 40px;
     gap: 30px;
   }
-  .header img {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 4px;
+  header img {
+    width: 160px;         
+    height: 160px;        
+    border-radius: 50%;   
+    object-fit: cover;    
+    border: 3px solid #851b4a; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 15px;   
   }
   .header-info {
     font-weight: 600;
@@ -73,5 +76,50 @@ body {
   .education-section p em {
     font-style: italic;
   }
+ /* Modal Background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
 
-  
+/* Modal Box */
+.modal-content {
+  background-color: #fff0f7;
+  margin: 10% auto;
+  padding: 30px;
+  border: 2px solid #de6fa1;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Close Button */
+.close {
+  color: #ba4081;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ff0055;
+}
+.blog-section {
+  background-color: #fffafc;
+  padding: 35px;
+  border: 4px dotted #ff9acb;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+}
