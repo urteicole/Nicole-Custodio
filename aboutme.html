@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content=""width=device-width, initial-scale="1.0">
-      <title>All About Me</title>
-      
-	<link rel="stylesheet" href="stylesheet.css" />
-      </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All About Me</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
 
-      <body>
+<body>
 
   <header class="header">
     <img src="nicole.jpg.jpg" alt="Nicole Custodio" />
     <div class="header-info">
       <h1>Nicole Custodio</h1>
       <p>20 / Female</p>
-      <p>Brgy.Inocencio,Trece Martires Cavite</p>
+      <p>Brgy. Inocencio, Trece Martires Cavite</p>
       <p>nicole.custodio@cvsu.edu.ph</p>
       <p>09933913960</p>
     </div>
@@ -26,11 +25,11 @@
     <section class="left-column">
       <h2>Personal Information</h2>
       <ul>
-        <li><strong>Civil Status :</strong> Single</li>
-        <li><strong>Birthdate :</strong> June 19, 2005</li>
-        <li><strong>Birthplace :</strong> Manila</li>
-        <li><strong>Father :</strong> Francisco Campollo</li>
-        <li><strong>Mother :</strong> Richel Y. Custodio</li>
+        <li><strong>Civil Status:</strong> Single</li>
+        <li><strong>Birthdate:</strong> June 19, 2005</li>
+        <li><strong>Birthplace:</strong> Manila</li>
+        <li><strong>Father:</strong> Francisco Campollo</li>
+        <li><strong>Mother:</strong> Richel Y. Custodio</li>
       </ul>
 
       <h2>Skills</h2>
@@ -39,29 +38,89 @@
         <li>Time management skills</li>
         <li>Creativity</li>
         <li>Teamwork and collaboration</li>
-	      
       </ul>
     </section>
 
     <section class="right-column">
       <h2>Educational Background</h2>
       <div class="education-section">
-        <p>Elementary : <strong>Southville Elementary School</strong></p>
+        <p>Elementary: <strong>Southville Elementary School</strong></p>
         <p><em>Graduated 2015</em></p>
 
-        <p>Junior High School : <strong>Southsummit Ridge Highschool</strong></p>
+        <p>Junior High School: <strong>Southsummit Ridge Highschool</strong></p>
         <p><em>Graduated 2019</em></p>
 
-        <p>Senior High School : <strong>Notredame Trece Martirez</strong></p>
+        <p>Senior High School: <strong>Notredame Trece Martirez</strong></p>
         <p><em>ICT</em></p>
         <p><em>Graduated 2023</em></p>
-       
 
-        <p>College : <strong>Cavite State University MAIN-Campus</strong></p>
-        <p><em>Student No.202303731</em></p>
+        <p>College: <strong>Cavite State University MAIN-Campus</strong></p>
+        <p><em>Student No. 202303731</em></p>
       </div>
     </section>
 
+   <!-- BLOG SECTION -->
+<section class="blog-section">
+  <h2>🌸 My Blog Corner</h2>
+
+  <div class="blog-container">
+
+    <article class="blog-card">
+      <h3>Why I Chose ICT Strand</h3>
+      <p class="date">📅 July 15, 2025</p>
+      <p class="excerpt">I’ve always been fascinated with how technology works, especially computers and design...</p>
+      <a href="#" class="read-more-btn" onclick="openModal('modal1')">✨ Read more</a>
+    </article>
+
+    <article class="blog-card">
+      <h3>College Life at CvSU Main</h3>
+      <p class="date">📅 July 10, 2025</p>
+      <p class="excerpt">Being a college student at CvSU is both challenging and exciting. I’ve met great friends...</p>
+      <a href="#" class="read-more-btn" onclick="openModal('modal2')">✨ Read more</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- MODAL 1 -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h3>Why I Chose ICT Strand</h3>
+    <p>I’ve always been fascinated with how technology works, especially computers and design. Choosing ICT helped me explore programming, design, and multimedia projects.</p>
+    <p>During my senior high school days, I had the opportunity to explore multimedia, web design, and programming. I found joy in solving coding problems, designing layouts, and even collaborating with classmates on digital projects. That passion is what led me to pursue ICT in college. I'm now learning more complex coding, and I love building things from scratch.</p>
+  </div>
+</div>
+
+<!-- MODAL 2 -->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h3>College Life at CvSU Main</h3>
+    <p>Being a college student at CvSU is both challenging and exciting. I’ve met great friends and learned a lot from our professors. Every day is a new experience!</p>
+    <p>From online classes to face-to-face lectures, each moment helps me grow. I'm becoming more responsible and independent, learning how to balance academics and life.</p>
+  </div>
+</div>
+<script>
+  function openModal(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+
+  // Optional: Close modal when clicking outside content
+  window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+      event.target.style.display = "none";
+    }
+  };
+</script>
+
+
+
   </main>
+
 </body>
 </html>
